@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.campo-grupo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secundario {
+    background-color: #4b5563;
+}
+
+.btn-logout {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #dc2626;
+}
+
+.mensagem-erro {
+    color: #991b1b;
+    background-color: #fee2e2;
+    border: 1px solid #fca5a5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cabecalho-crud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.botoes-acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+li {
+    background: #f9fafb;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-editar {
+    background-color: #d97706;
+    width: auto;
+    padding: 4px 8px;
+    margin-right: 5px;
+}
+
+.btn-remover {
+    background-color: #dc2626;
+    width: auto;
+    padding: 4px 8px;
+}

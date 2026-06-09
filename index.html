@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Lutas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container-login" class="card">
+        <h2>Área de Acesso</h2>
+        <p class="subtitulo">Insira suas credenciais</p>
+        
+        <div class="campo-grupo">
+            <label>Usuário:</label>
+            <input type="text" id="usuario" placeholder="Digite o usuário">
+        </div>
+
+        <div class="campo-grupo">
+            <label>Senha:</label>
+            <input type="password" id="senha" placeholder="Digite a senha">
+        </div>
+
+        <button onclick="executarLogin()">Entrar</button>
+        <p id="erro-login" class="mensagem-erro oculto"></p>
+    </div>
+
+    <div id="container-crud" class="card oculto">
+        <div class="cabecalho-crud">
+            <h2>Artes Marciais & Lutas</h2>
+            <button onclick="executarLogout()" class="btn-logout">Sair</button>
+        </div>
+
+        <div class="formulario-insercao">
+            <input type="text" id="novo-item" placeholder="Ex: Boxe, Jiu-Jitsu, Judô...">
+            <div class="botoes-acoes">
+                <button onclick="adicionarNoInicio()" class="btn-secundario">Inserir no Início</button>
+                <button onclick="adicionarNoFinal()">Inserir no Fim</button>
+            </div>
+        </div>
+
+        <p id="erro-crud" class="mensagem-erro oculto"></p>
+
+        <ul id="lista-itens"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
